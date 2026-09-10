@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript Control Structures</title>
+</head>
+
+<body>
+    <h1>JavaScript Control Structures</h1>
+    <div>
+        <h2>1. if / else</h2>
+        <script>
+            let age = 18;
+            if (age >= 18) {
+                document.write("<p>You are eligible to vote.</p>");
+            } else {
+                document.write("<p>You are not eligible to vote.</p>");
+            }
+        </script>
+
+        <script>
+            let student_age = 20;
+            let student_grade = "A";
+            if (student_age >= 20 && student_grade == "A") {
+                document.write("<p>You pass.</p>");
+            } else { document.write("<p>You fail.</p>"); }
+
+        </script>
+
+    </div>
+
+    <div>
+        <h2>2. switch</h2>
+        <script>
+            let day = 3;
+            let dayName;
+
+            switch (day) {
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                default:
+                    dayName = "Another day";
+            }
+
+            document.write("<p>Day " + day + " is " + dayName + ".</p>");
+        </script>
+
+        <script>
+            let student_class = 370;
+            let class_day = "Thursday"
+            switch (student_class && class_day) {
+                case 370 && "Thursday":
+                    class_output = "Web and Mobile Development is on Thursday";
+                    break;
+                default:
+                    class_output = "Another class";
+            }
+
+            document.write("<p>Student is in " + class_output + ".</p>");
+        </script>
+
+
+    </div>
+
+    <div>
+        <h2>3. for loop</h2>
+        <script>
+            document.write("<p>Numbers from 1 to 5: ");
+            for (let i = 1; i <= 5; i++) {
+                document.write(i + " ");
+            }
+            document.write("</p>");
+        </script>
+
+        <script>
+            document.write("<p> Multiplication table of 11</p>");
+            for (let i = 1; i <= 10; i++) {
+                document.write("<p> 11 * " + i + "=" + (11 * i) + "</p>");
+            }
+        </script>
+
+        <script>
+            array = ["ahla", "javeria", "lalala"];
+            document.write("<p>People: ");
+            for (let i = 0; i < array.length; i++) {
+                document.write(array[i] + " ");
+            }
+        </script>
+        
+    </div>
+
+    <div>
+        <h2>4. while loop</h2>
+        <script>
+            let count = 1;
+            document.write("<p>");
+            while (count <= 5) {
+                document.write(count + " ");
+                count++;
+            }
+            document.write("</p>");
+        </script>
+    </div>
+
+    <div>
+        <h2>5. break</h2>
+        <script>
+            document.write("<p>");
+            for (let i = 1; i <= 10; i++) {
+                if (i === 6) {
+                    break;
+                }
+                document.write(i + " ");
+            }
+            document.write("</p>");
+        </script>
+    </div>
+
+    <div>
+        <h2>6. continue</h2>
+        <script>
+            document.write("<p>");
+            for (let i = 1; i <= 6; i++) {
+                if (i === 3) {
+                    continue;
+                }
+                document.write(i + " ");
+            }
+            document.write("</p>");
+        </script>
+    </div>
+</body>
+
+</html>
